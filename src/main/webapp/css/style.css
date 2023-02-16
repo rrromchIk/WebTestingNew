@@ -1,0 +1,487 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    height: 100vh;
+    align-items: center;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    width: 100%;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+#navbar {
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 30px;
+    background-color: rgb(211,211,211, 0.85);
+}
+
+#navbar-logo {
+    justify-self: left;
+    margin-left: 30px;
+}
+
+#navbar-table {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item-wrapper {
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+#lang-dropdown {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+#signInText {
+    color: rgb(211,211,211);
+    text-align: center;
+}
+
+#forgotPasswordText {
+    margin-top: 85px;
+    color: rgb(211,211,211);
+}
+
+#signUpText{
+    color: rgb(211,211,211);
+}
+
+#main-content {
+    display: flex;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    /*margin-top: 225px;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+#signInForm {
+    backdrop-filter: blur(3px);
+    padding: 30px;
+    margin: 10px;
+    border-width: 2px;
+    border-style: solid;
+    width: 400px;
+    border-color: rgb(175, 175, 175);
+    border-radius: 2%;
+}
+
+.registrTip {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+
+.registrTipText {
+    color: rgb(211,211,211);
+    padding-right: 10px;
+}
+
+#addingTest {
+    margin: 10px;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgb(175, 175, 175);
+    border-radius: 1%;
+    padding: 20px;
+}
+
+#signUpForm {
+    backdrop-filter: blur(3px);
+    padding: 30px;
+    margin: 10px;
+    border-width: 2px;
+    border-style: solid;
+    width: 400px;
+    border-color: rgb(175, 175, 175);
+    border-radius: 2%;
+}
+
+#signUpButton {
+    margin: 10px auto;
+    display: block;
+}
+
+#profileForm {
+    backdrop-filter: blur(3px);
+    padding: 30px;
+    margin: 10px;
+    border-width: 2px;
+    border-style: solid;
+    width: 420px;
+    border-color: rgb(175, 175, 175);
+    border-radius: 2%;
+}
+
+#tests{
+    display: grid;
+    width: 60vw;
+    margin-left: 15%;
+    margin-right: 20%;
+    justify-content: center;
+    grid-template-columns: 3fr;
+}
+
+#passedTests{
+    display: grid;
+    width: 60vw;
+    margin-left: 15%;
+    margin-right: 20%;
+    justify-content: center;
+    grid-template-columns: 3fr;
+}
+
+#users{
+    display: grid;
+    width: 60vw;
+    margin-left: 15%;
+    margin-right: 20%;
+    justify-content: center;
+    grid-template-columns: 3fr;
+}
+
+#test-item{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#test-item:hover{
+    transform: scale(1.02);
+}
+
+#pagination-nav{
+    margin-top: 30px;
+}
+
+#choice{
+    display: grid;
+    width: 60vw;
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-right: 20%;
+    justify-content: center;
+    grid-template-columns: 3fr;
+}
+
+#main-screen{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#timer{
+    padding-left: 10px;
+    width: 120px;
+    height: 70px;
+}
+
+#question{
+    padding-left: 10px;
+    color: rgb(5, 5, 5);
+    width: 70vw;
+    height: 70vh;
+}
+
+#button-group{
+    margin: 20px;
+}
+.sort{
+    color: white;
+    margin-left: auto;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.sort > a{
+    font-weight: 430;
+    color: white;
+    margin: 0 20px  0 20px;
+    color: white;
+}
+
+.sort>a:hover {
+    transition: 500ms;
+    /*text-decoration: underline dotted;*/
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: rgb(0,123,255);
+}
+
+.sort > span{
+    margin: 0 20px 0 20px;
+}
+
+#uaDropdown, #engDropdown{
+    text-align: center;
+    cursor: pointer;
+}
+
+#dropdown-menu{
+    min-width: 0px;
+
+    height: 80px;
+    margin-left: 9px;
+    margin-top: 9px;
+    padding: 0;
+}
+
+.dropdown-menu > #engDropdown{
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 0;
+    padding: 5px 0 10px 0;
+}
+
+.dropdown-menu > #engDropdown>img{
+    height: 15px;
+}
+
+.dropdown-menu > #uaDropdown{
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+.dropdown-menu > #uaDropdown>img{
+    height: 19px;
+}
+
+#editTestButton {
+    background-color: red;
+    border:none
+}
+
+#testText {
+    font-weight: bold;
+}
+
+.spanName{
+    font-weight: bold;
+}
+
+.questionCard {
+    width: 12rem;
+    height: min-content;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+.timer__items {
+    display: flex;
+    font-size: 32px;
+    color: white;
+}
+
+.timer__item {
+    position: relative;
+    min-width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+}
+
+#submitTestInfoButton {
+    margin: 10px auto;
+    display: block;
+    width: 220px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#addQuestionsMain {
+    width: 50em;
+}
+
+#gradeInput{
+    border: 1px solid #D9DDE2;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.form-check{
+    margin-bottom: 20px;
+}
+
+.answerHeader{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.amountOfQuestionSpan{
+    position: absolute;
+    right: 0;
+}
+
+#questionText {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+#main-content {
+    min-height: calc(100vh - 150px);
+    color: white;
+}
+
+footer{
+    color: white;
+}
+
+
+input.form-check-input{
+    margin-top: 12px;
+}
+
+.card{
+    opacity: 94%;
+}
+
+#addingTestDIV {
+    min-height: calc(100vh - 130px);
+}
+
+#users-choice, #tests-choice {
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+}
+
+#signInFormDIV {
+    min-height: calc(100vh - 150px);
+}
+
+#forgotPasswordDIV {
+    min-height: calc(100vh - 300px);
+}
+
+#profileFormDIV {
+    min-height: calc(100vh - 220px);
+
+}
+
+.color{
+    color: white;
+}
+
+#signUpFormDIV {
+    min-height: calc(100vh - 30px);
+}
+
+#endAttemptButtonDIV {
+    min-height: calc(100vh - 715px);
+}
+
+/* Scroll */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+#amountOfQuestionsLabel {
+    padding: 6px;
+}
+
+
+.personal-image {
+    text-align: center;
+}
+.personal-image input[type="file"] {
+    display: none;
+}
+.personal-figure {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.personal-avatar {
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out .3s;
+}
+.personal-avatar:hover {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.personal-figcaption {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    width: inherit;
+    height: inherit;
+    border-radius: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all ease-in-out .3s;
+}
+.personal-figcaption:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .5);
+}
+.personal-figcaption > img {
+    margin-top: 32.5px;
+    width: 50px;
+    height: 50px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+

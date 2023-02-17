@@ -86,9 +86,14 @@
             </div>
         </div>
 
+        <script src='https://www.google.com/recaptcha/api.js?hl=${sessionScope.defaultLocale}'></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <jsp:include page="/WEB-INF/templates/_footer.jsp"/>
         <jsp:include page="/WEB-INF/templates/_scripts.jsp"/>
     </body>
 </html>
+
+
+
+
 
